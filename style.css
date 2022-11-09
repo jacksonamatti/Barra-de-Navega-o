@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #030d4f;
+}
+
+.container {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #fb0c06;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  color: #030d4f;
+}
+
+.fa-bars {
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-x {
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.sideBarAbrir {
+  width: 100%;
+  height: 200px;
+  background-color: #ceecef;
+  position: relative;
+  animation-name: slideBar;
+  animation-duration: 4s;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  display: none;
+}
+
+.sideBarFechar {
+  display: block;
+}
+
+.sideBarAbrir li {
+  list-style: none;
+  border-bottom: 1px solid #030d4f;
+  text-align: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: #030d4f;
+  font-size: 20px;
+}
+
+.sideBarAbrir li:hover {
+  background-color: #030d4f;
+  color: #fb0c06;
+}
+
+@keyframes slideBar {
+  0% {
+    left: 0px;
+    top: 300px;
+  }
+  25% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: #030d4f;
+  }
+}
